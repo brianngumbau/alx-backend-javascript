@@ -1,4 +1,3 @@
-/*Import file system module*/
 const fs = require('fs');
 
 function countStudents(path) {
