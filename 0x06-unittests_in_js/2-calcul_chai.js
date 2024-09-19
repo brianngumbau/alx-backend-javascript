@@ -1,5 +1,5 @@
+// 2-calcul_chai.js
 function calculateNumber(type, a, b) {
-
   const roundedA = Math.round(a);
   const roundedB = Math.round(b);
 
@@ -8,9 +8,7 @@ function calculateNumber(type, a, b) {
   } else if (type === 'SUBTRACT') {
     return roundedA - roundedB;
   } else if (type === 'DIVIDE') {
-    if (roundedB === 0) {
-      return 'Error';
-    }
+    if (roundedB === 0) return 'Error';
     return roundedA / roundedB;
   }
 }
